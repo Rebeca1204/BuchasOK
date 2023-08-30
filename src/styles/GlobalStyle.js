@@ -8,7 +8,7 @@ html{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 100%; //padrao = 1rem = 16px
-    color: #212121;
+    color:  ${(props) => props.theme.colors.danger.text};
     box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3,h4, h5, h6{
     font-weight: 700;
     letter-spacing: 2px;
     strong {
-    color: #185687;
+    color: ${(props) => props.theme.colors.primary.main};
   }
 }
 h1{

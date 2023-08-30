@@ -1,12 +1,12 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render } from "./test-utils";
 import Hero from "./Hero";
 
 test("renders Hero with children", () => {
   const { getByText } = render(
     <Hero>
       <p>Teste 1</p>
-    </Hero>
+    </Hero>,
   );
   expect(getByText("Teste 1")).toBeInTheDocument();
 });

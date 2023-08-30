@@ -1,6 +1,6 @@
 import React from "react";
 import GlobalStyle from "./GlobalStyle";
-import { render } from "@testing-library/react";
+import { render } from "../components/test-utils";
 
 test("match snapshot", () => {
   render(<GlobalStyle />);

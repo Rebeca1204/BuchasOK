@@ -6,8 +6,8 @@ import ThemeProvider from "../src/styles/ThemeProvider";
 export const decorators = [
   (StoryFn) => (
     <>
-      <GlobalStyle />
       <ThemeProvider>
+        <GlobalStyle />
         <StoryFn />
       </ThemeProvider>
     </>
