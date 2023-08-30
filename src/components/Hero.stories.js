@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "./Heading";
 import Hero from "./Hero";
+import Button from "./Button";
 import { text } from "@storybook/addon-knobs";
 export default {
   title: "Components/Hero",
@@ -30,5 +31,8 @@ export const usage = () => (
         )}
       </li>
     </ul>
+    <Button variant="outlined" color="primary">
+      Conheça
+    </Button>
   </Hero>
 );
