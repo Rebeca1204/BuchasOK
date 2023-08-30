@@ -1,6 +1,10 @@
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
-  stories: ["../src/**/*.(js|mdx)", "../src/**/*.stories.@(js|mdx)"],
+  stories: [
+    "../src/stories/*.stories.(js|mdx)",
+    "../src/components/*.stories.(js|mdx)",
+    "../src/styles/*.stories.(js|mdx)",
+  ],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -19,9 +23,6 @@ const config = {
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
-  },
-  docs: {
-    autodocs: true,
   },
   staticDirs: ["../public"],
 };
