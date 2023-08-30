@@ -8,7 +8,7 @@ html{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 100%; //padrao = 1rem = 16px
-    color:  ${(props) => props.theme.colors.danger.text};
+    color:  ${(props) => props.theme.colors.primary.text};
     box-sizing: border-box;
 }
 

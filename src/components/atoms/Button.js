@@ -51,7 +51,7 @@ const getTextColor = ({ theme, color }) => {
     case ButtonColors.danger:
       return theme.colors.danger.text;
     default:
-      return theme.colors.danger.text;
+      return theme.colors.primary.text;
   }
 };
 const Button = styled.button`

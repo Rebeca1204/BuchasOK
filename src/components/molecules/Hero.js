@@ -3,10 +3,9 @@ import styled from "styled-components";
 import { BreakAt, BreakpointSize } from "styles/Breakpoints";
 import PropTypes from "prop-types";
 
-const colorPurple = "#9370b7";
 const Root = styled.div`
   padding: 100px 0;
-  background-color: ${colorPurple};
+  background-color: ${(props) => props.theme.colors.primary.dark};
 `;
 
 const Content = styled.div`
@@ -30,7 +29,7 @@ const Content = styled.div`
 const Container = styled.div`
   width: 100%;
   padding: 0 8px;
-  color: ${(props) => props.theme.colors.primary.text};
+  color: ${(props) => props.theme.colors.danger.text};
   ${BreakAt(BreakpointSize.sm)} {
     margin: 0 16px;
   }
