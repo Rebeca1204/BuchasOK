@@ -1,12 +1,15 @@
 /** @type { import('@storybook/react').Preview } */
 import React from "react";
 import GlobalStyle from "../src/styles/GlobalStyle";
+import ThemeProvider from "../src/styles/ThemeProvider";
 
 export const decorators = [
   (StoryFn) => (
     <>
       <GlobalStyle />
-      <StoryFn />
+      <ThemeProvider>
+        <StoryFn />
+      </ThemeProvider>
     </>
   ),
 ];
