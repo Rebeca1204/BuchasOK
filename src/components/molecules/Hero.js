@@ -9,6 +9,7 @@ const Root = styled.div`
 
 const Content = styled.div`
   display: inline-block;
+  color: ${(props) => props.theme.colors.danger.text};
   p,
   li {
     font-size: 20px;

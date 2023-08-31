@@ -7,6 +7,7 @@ import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
 import { FaEnvelopeOpen, FaAddressBook } from "react-icons/fa";
+import AboutVideo from "assets/AboutVideo.mp4";
 
 const Home = () => (
   <>
@@ -54,6 +55,36 @@ const Home = () => (
             in.
           </p>
         </Feature>
+      </Grid>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Conheça nossos produtos</h2>
+      </Heading>
+    </Section>
+    <Section>
+      <Grid md={2}>
+        <div>
+          <Heading>
+            <h2>Sobre nós</h2>
+          </Heading>
+          <p>
+            Aliqua aliquip esse deserunt eiusmod non ut eiusmod. Qui velit
+            exercitation exercitation ut nisi pariatur proident nisi cillum sunt
+            eiusmod ex. Ea dolor magna aliquip laborum ut amet aliquip irure
+            laboris id incididunt occaecat esse.
+          </p>
+          <Button color="primary">Saiba mais</Button>
+        </div>
+        <div>
+          <video
+            style={{ borderRadius: "10px" }}
+            src={AboutVideo}
+            width="100%"
+            autoPlay
+            loop
+          />
+        </div>
       </Grid>
     </Section>
   </>

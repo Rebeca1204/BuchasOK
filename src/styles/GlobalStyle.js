@@ -8,6 +8,7 @@ html{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 100%; //padrao = 1rem = 16px
+    color:  ${(props) => props.theme.colors.primary.text};
     box-sizing: border-box;
 }
 
@@ -15,13 +16,9 @@ html{
     box-sizing: inherit;
 }
 
-p{
-color:  ${(props) => props.theme.colors.primary.text};
-}
 body{
     margin: 0;
 }
-
 h1, h2, h3,h4, h5, h6{
     line-height: 1.3;
     font-weight: 700;
@@ -76,6 +73,8 @@ const GlobalStyleComposed = () => (
   <>
     <GlobalStyle />
     <Helmet>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
         rel="stylesheet"

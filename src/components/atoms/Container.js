@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 const Container = styled.div`
   width: 100%;
   padding: 0 8px;
-  color: ${(props) => props.theme.colors.danger.text};
   ${BreakAt(BreakpointSize.sm)} {
     margin: 0 16px;
   }
