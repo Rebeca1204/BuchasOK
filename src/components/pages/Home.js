@@ -6,6 +6,7 @@ import Button from "components/atoms/Button";
 import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
+import Footer from "components/organisms/Footer";
 import { FaEnvelopeOpen, FaAddressBook } from "react-icons/fa";
 import AboutVideo from "assets/AboutVideo.mp4";
 
@@ -59,7 +60,7 @@ const Home = () => (
     </Section>
     <Section inverse>
       <Heading>
-        <h2>Conheça nossos produtos</h2>
+        <h2>Descubra nossos produtos</h2>
       </Heading>
     </Section>
     <Section>
@@ -87,6 +88,8 @@ const Home = () => (
         </div>
       </Grid>
     </Section>
+
+    <Footer />
   </>
 );
 

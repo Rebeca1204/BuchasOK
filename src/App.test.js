@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 test("renders call to action", () => {
-  render(<App />);
-  const linkElement = screen.getByText(/conheça/i);
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Conheça/i);
   expect(linkElement).toBeInTheDocument();
 });
