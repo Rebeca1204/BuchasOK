@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { BreakAt, BreakpointSize } from "styles/Breakpoints";
 import PropTypes from "prop-types";
-
+import Container from "components/atoms/Container";
 const Root = styled.div`
   padding: 100px 0;
   background-color: ${(props) => props.theme.colors.primary.dark};
 `;
 
 const Content = styled.div`
+  display: inline-block;
   p,
   li {
     font-size: 20px;
@@ -26,19 +26,6 @@ const Content = styled.div`
   }
 `;
 
-const Container = styled.div`
-  width: 100%;
-  padding: 0 8px;
-  color: ${(props) => props.theme.colors.danger.text};
-  ${BreakAt(BreakpointSize.sm)} {
-    margin: 0 16px;
-  }
-  ${BreakAt(BreakpointSize.xl)} {
-    padding: 0;
-    width: 1140px;
-    margin: 0 auto;
-  }
-`;
 const Hero = ({ children }) => (
   <Root>
     {/* style={{background: url(), rgba(0,0,0,0.4); background-size: cover; background-position: center; background-blend-mode: overlay; }} */}

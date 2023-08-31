@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import Button from "../atoms/Button";
 import { text } from "@storybook/addon-knobs";
 export default {
-  title: "Components/MoleculesHero",
+  title: "Components/Molecules/Hero",
   component: Hero,
 };
 

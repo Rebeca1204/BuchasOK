@@ -4,7 +4,7 @@ import { actions } from "@storybook/addon-actions";
 import styled from "styled-components";
 
 export default {
-  title: "Components/Button",
+  title: "Components/Atoms/Button",
   component: Button,
 };
 

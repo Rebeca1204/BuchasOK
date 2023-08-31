@@ -3,7 +3,7 @@ import Feature from "./Feature";
 import Grid from "./Grid";
 import { FaEnvelopeOpen, FaAddressBook } from "react-icons/fa";
 export default {
-  title: "Components/Feature",
+  title: "Components/Atoms/Feature",
   component: Feature,
 };
 

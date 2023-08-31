@@ -12,7 +12,7 @@ const Root = styled.div`
     min-height: 3.12rem;
 
     ${BreakAt(BreakpointSize.lg)} {
-        min-height: 3.9rem;
+      min-height: 3.9rem;
     }
   }
   & p {
@@ -52,7 +52,9 @@ const Feature = ({ icon, title, children }) => (
     <IconRoot>
       <IconContainer>{icon}</IconContainer>
     </IconRoot>
-    <h5>{title}</h5>
+    <h5>
+      <strong>{title}</strong>
+    </h5>
     <div>{children}</div>
   </Root>
 );
