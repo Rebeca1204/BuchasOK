@@ -132,9 +132,9 @@ exports[`renders with color danger 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #f47174;
-  border: 2px solid #f47174;
-  color: #212121;
+  background-color: #6e4f4b;
+  border: 2px solid #6e4f4b;
+  color: #dfe0d8;
   border-radius: 5px;
 }
 
@@ -198,9 +198,9 @@ exports[`renders with color primary 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #185687;
-  border: 2px solid #185687;
-  color: #fff;
+  background-color: #90b19d;
+  border: 2px solid #90b19d;
+  color: #212121;
   border-radius: 5px;
 }
 
@@ -210,8 +210,8 @@ exports[`renders with color primary 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #091c29;
-  border: #091c29;
+  background-color: #324f49;
+  border: #324f49;
 }
 
 <button
@@ -231,9 +231,9 @@ exports[`renders with color primary and variant link 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #185687;
-  border: 2px solid #185687;
-  color: #fff;
+  background-color: #90b19d;
+  border: 2px solid #90b19d;
+  color: #212121;
   border-radius: 5px;
 }
 
@@ -243,14 +243,14 @@ exports[`renders with color primary and variant link 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #091c29;
-  border: #091c29;
+  background-color: #324f49;
+  border: #324f49;
 }
 
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #185687;
+  color: #90b19d;
   padding-left: 0;
   padding-right: 0;
 }
@@ -258,7 +258,7 @@ exports[`renders with color primary and variant link 1`] = `
 .c1:hover:enabled {
   background-color: transparent;
   border-color: transparent;
-  color: #091c29;
+  color: #324f49;
 }
 
 <button
@@ -278,9 +278,9 @@ exports[`renders with color primary and variant outlined 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #185687;
-  border: 2px solid #185687;
-  color: #fff;
+  background-color: #90b19d;
+  border: 2px solid #90b19d;
+  color: #212121;
   border-radius: 5px;
 }
 
@@ -290,19 +290,19 @@ exports[`renders with color primary and variant outlined 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #091c29;
-  border: #091c29;
+  background-color: #324f49;
+  border: #324f49;
 }
 
 .c1 {
   background-color: transparent;
-  color: #185687;
+  color: #90b19d;
 }
 
 .c1:hover:enabled {
   background-color: transparent;
-  color: #091c29;
-  border: 2px solid #091c29;
+  color: #324f49;
+  border: 2px solid #324f49;
 }
 
 <button
