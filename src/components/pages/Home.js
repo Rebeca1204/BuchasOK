@@ -9,6 +9,52 @@ import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import { FaEnvelopeOpen, FaAddressBook } from "react-icons/fa";
 import AboutVideo from "assets/AboutVideo.mp4";
+import ProductGrid from "components/organisms/ProductGrid";
+
+const products = [
+  {
+    id: 0,
+    title: "Produto 1",
+    summary:
+      "Voluptate voluptate excepteur nisi aliqua cillum laboris sit fugiat voluptate exercitation excepteur.",
+    image: "https://s3.amazonaws.com/lepok.w/produtos/produtos/02628_2.jpg",
+  },
+  {
+    id: 1,
+    title: "Produto 2",
+    summary:
+      "Ad consectetur dolore sunt ipsum deserunt exercitation elit ut sunt.",
+    image: undefined,
+  },
+  {
+    id: 2,
+    title: "Produto 3",
+    summary:
+      "Velit nostrud officia et dolore excepteur veniam sunt cupidatat ut pariatur exercitation id.",
+    image: undefined,
+  },
+  {
+    id: 3,
+    title: "Produto 4",
+    summary:
+      "Pariatur irure consectetur officia laboris nostrud elit pariatur occaecat id qui.",
+    image: undefined,
+  },
+  {
+    id: 4,
+    title: "Produto 5",
+    summary:
+      "Quis fugiat do culpa non tempor ea magna ut adipisicing anim excepteur pariatur.",
+    image: undefined,
+  },
+  {
+    id: 5,
+    title: "Produto 6",
+    summary:
+      "Nisi labore laborum esse officia ex enim exercitation ipsum eiusmod Lorem et eu ipsum.",
+    image: undefined,
+  },
+];
 
 const Home = () => (
   <>
@@ -62,6 +108,7 @@ const Home = () => (
       <Heading>
         <h2>Descubra nossos produtos</h2>
       </Heading>
+      <ProductGrid products={products} />
     </Section>
     <Section>
       <Grid md={2}>
