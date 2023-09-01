@@ -7,6 +7,7 @@ import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
+import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 import { FaEnvelopeOpen, FaAddressBook } from "react-icons/fa";
 import AboutVideo from "assets/AboutVideo.mp4";
 import ProductGrid from "components/organisms/ProductGrid";
@@ -134,6 +135,44 @@ const Home = () => (
           />
         </div>
       </Grid>
+    </Section>
+
+    <Section inverse>
+      <Heading>
+        <h2>Dúvidas recorrentes</h2>
+      </Heading>
+      <AccordionGroup>
+        <Accordion title="Como eu djfisdjf udfhuaif aufhuadh">
+          Ea aliqua ad nisi exercitation aliqua in tempor proident mollit duis.
+          Ea fugiat voluptate ex qui et. Ut voluptate aute adipisicing occaecat
+          pariatur.Commodo id minim aliquip eu amet proident laboris laboris
+          sint ut id. Velit ea dolor consequat velit nulla. Aliquip elit veniam
+          nostrud aliqua est mollit officia Lorem aliqua eu laborum. Consequat
+          proident occaecat incididunt excepteur velit sint in anim. Adipisicing
+          qui id commodo non duis elit ullamco cupidatat cupidatat commodo.
+          Tempor eiusmod non cillum irure minim.
+        </Accordion>
+        <Accordion title="Como eu tempor aliquip sit consequat minim.">
+          Ea aliqua ad nisi exercitation aliqua in tempor proident mollit duis.
+          Ea fugiat voluptate ex qui et. Ut voluptate aute adipisicing occaecat
+          pariatur.Commodo id minim aliquip eu amet proident laboris laboris
+          sint ut id. Velit ea dolor consequat velit nulla. Aliquip elit veniam
+          nostrud aliqua est mollit officia Lorem aliqua eu laborum. Consequat
+          proident occaecat incididunt excepteur velit sint in anim. Adipisicing
+          qui id commodo non duis elit ullamco cupidatat cupidatat commodo.
+          Tempor eiusmod non cillum irure minim.
+        </Accordion>
+        <Accordion title="Como eu id magna cillum ad consequat ut laborum.">
+          Ea aliqua ad nisi exercitation aliqua in tempor proident mollit duis.
+          Ea fugiat voluptate ex qui et. Ut voluptate aute adipisicing occaecat
+          pariatur.Commodo id minim aliquip eu amet proident laboris laboris
+          sint ut id. Velit ea dolor consequat velit nulla. Aliquip elit veniam
+          nostrud aliqua est mollit officia Lorem aliqua eu laborum. Consequat
+          proident occaecat incididunt excepteur velit sint in anim. Adipisicing
+          qui id commodo non duis elit ullamco cupidatat cupidatat commodo.
+          Tempor eiusmod non cillum irure minim.
+        </Accordion>
+      </AccordionGroup>
     </Section>
 
     <Footer />
