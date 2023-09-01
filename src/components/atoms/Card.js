@@ -46,14 +46,10 @@ CardMedia.propTypes = {
 const Root = styled.div`
   background-color: ${(props) => props.theme.colors.danger.text};
   border-radius: 4px;
+  overflow: hidden;
 `;
 
-const Card = ({ children }) => (
-  <Root>
-    <div />
-    {children}
-  </Root>
-);
+const Card = ({ children }) => <Root>{children}</Root>;
 
 Card.defaultProps = {
   children: undefined,
