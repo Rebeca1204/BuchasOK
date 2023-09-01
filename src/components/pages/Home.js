@@ -73,9 +73,7 @@ const Home = () => (
           culpa.
         </li>
       </ul>
-      <Button variant="outlined" color="primary">
-        Conheça
-      </Button>
+      <Button variant="outlined">Conheça</Button>
     </Hero>
     <Section>
       <Grid sm={3}>
