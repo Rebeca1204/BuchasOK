@@ -1,12 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import styled from "styled-components";
 
-const Root = styled.div`
-  background-color: ${(props) => props.theme.colors.danger.text};
-  border-radius: 4px;
-`;
-
+//#region CardBody
 const Body = styled.div`
   padding: 16px;
 
@@ -15,23 +12,52 @@ const Body = styled.div`
   }
 `;
 
+export const CardBody = ({ children }) => <Body>{children}</Body>;
+
+CardBody.defaultProps = {
+  children: undefined,
+};
+
+CardBody.propTypes = {
+  children: PropTypes.node,
+};
+//#endregion
+
+//#region CardMedia
 const Media = styled.div`
   background-image: url(${(props) => props.image});
   background-position: center center;
   background-size: cover;
-  height: 270px;
+  min-height: 270px;
 `;
 
-export const CardBody = ({ children }) => <Body>{children}</Body>;
-export const CardMedia = ({ image }) => <Media image={image} />;
-const Card = ({ children }) => <Root>{children}</Root>;
+export const CardMedia = ({ image }) => <Media image={image}></Media>;
 
-Card.propTypes = {
-  children: PropTypes.node,
+CardMedia.defaultProps = {
+  image: undefined,
 };
+
+CardMedia.propTypes = {
+  children: PropTypes.string,
+};
+//#endregion
+
+//#region  Card
+const Root = styled.div`
+  background-color: ${(props) => props.theme.colors.danger.text};
+  border-radius: 4px;
+  overflow: hidden;
+`;
+
+const Card = ({ children }) => <Root>{children}</Root>;
 
 Card.defaultProps = {
   children: undefined,
 };
 
+Card.propTypes = {
+  children: PropTypes.node,
+};
+
 export default Card;
+//#endregion
