@@ -59,48 +59,38 @@ const products = [
 
 const Home = () => (
   <>
-    <Hero>
+    <Hero image="https://images.pexels.com/photos/6720550/pexels-photo-6720550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
       <Heading>
         <h1>
-          Connect Project <strong>(destaque)</strong>
+          BUCHAS OK
+          <strong> (desde 1955)</strong>
         </h1>
       </Heading>
       <ul>
-        <li>Fugiat dolore dolor laborum ea velit tempor sit Lorem ad.</li>
-        <li>Lorem laborum ex magna esse ut amet ut eu.</li>
-        <li>
-          Tempor duis occaecat cillum excepteur excepteur enim labore minim
-          culpa.
-        </li>
+        <li>A tradição e qualidade que atravessa gerações</li>
       </ul>
-      <Button variant="outlined" color="primary">
-        Conheça
+      <Button variant="default" color="primary">
+        Conheça nossa linha completa de produtos
       </Button>
     </Hero>
     <Section>
       <Grid sm={3}>
-        <Feature
-          title="Maior site de produtos no Brasil"
-          icon={<FaEnvelopeOpen />}
-        >
-          <p>Junte-se a nós. Faça agora o seu cadastro.</p>
-        </Feature>
-        <Feature
-          title="Mais de 10000 usuários por dia"
-          icon={<FaEnvelopeOpen />}
-        >
+        <Feature title="Nossa missão" icon={<FaEnvelopeOpen />}>
           <p>
-            Aliquip exercitation voluptate commodo aliquip occaecat culpa fugiat
-            in.
+            Trabalhar com competência e ética, atendendo as necessidades dos
+            nossos clientes.
           </p>
         </Feature>
-        <Feature
-          title="Melhores produtos e avaliações confiáveis"
-          icon={<FaAddressBook />}
-        >
+        <Feature title="Nossa visão" icon={<FaEnvelopeOpen />}>
           <p>
-            Aliquip exercitation voluptate commodo aliquip occaecat culpa fugiat
-            in.
+            Oferecer sempre um ótimo serviço aos nossos clientes e atingir
+            nossos objetivos.
+          </p>
+        </Feature>
+        <Feature title="Nossos valores" icon={<FaAddressBook />}>
+          <p>
+            Com integridade, humildade, respeito e honestidade, mantendo sempre
+            o foco e determinação, podemos alcançar nossos objetivos.
           </p>
         </Feature>
       </Grid>
@@ -118,10 +108,18 @@ const Home = () => (
             <h2>Sobre nós</h2>
           </Heading>
           <p>
-            Aliqua aliquip esse deserunt eiusmod non ut eiusmod. Qui velit
-            exercitation exercitation ut nisi pariatur proident nisi cillum sunt
-            eiusmod ex. Ea dolor magna aliquip laborum ut amet aliquip irure
-            laboris id incididunt occaecat esse.
+            Somos tradicionais fabricantes de peças para suspensão veicular,
+            atuando a mais de 70 anos no mercado brasileiro. Atualmente contamos
+            com a fabricação de uma linha de buchas composta por material
+            especial de alta resistência e alta durabilidade e com garantia
+            contra trincas.
+          </p>
+          <p>
+            <strong> Atendemos frotistas de Vans, Ônibus e Caminhões.</strong>
+          </p>
+          <p>
+            Contate-nos para maiores informações sobre comprovação de
+            durabilidade.
           </p>
           <Button color="primary">Saiba mais</Button>
         </div>
@@ -132,6 +130,7 @@ const Home = () => (
             width="100%"
             autoPlay
             loop
+            muted
           />
         </div>
       </Grid>
@@ -178,9 +177,5 @@ const Home = () => (
     <Footer />
   </>
 );
-
-// Home.defaultProps = {};
-
-// Home.propTypes = {};
 
 export default Home;

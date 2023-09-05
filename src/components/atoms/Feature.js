@@ -8,12 +8,11 @@ const Root = styled.div`
   text-align: center;
   & h5 {
     margin: 16px 0;
-    //mudar
-    min-height: 3.12rem;
+    min-height: 1.2rem;
 
-    ${BreakAt(BreakpointSize.lg)} {
-      min-height: 3.9rem;
-    }
+    /* ${BreakAt(BreakpointSize.lg)} {
+      min-height: 1.2rem;
+    } */
   }
   & p {
     margin: 0;

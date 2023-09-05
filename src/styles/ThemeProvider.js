@@ -4,8 +4,8 @@ import { ThemeProvider as StyledProvider } from "styled-components";
 const theme = {
   colors: {
     primary: {
-      main: "#90b19d",
-      dark: "#324f49",
+      main: "#FF364C",
+      dark: "#6A0E0E",
       text: "#212121",
     },
     danger: {

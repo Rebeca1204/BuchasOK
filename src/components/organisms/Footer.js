@@ -9,6 +9,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaEnvelope,
 } from "react-icons/fa";
 const Root = styled.footer`
   background-color: #2a2a2a;
@@ -40,12 +41,12 @@ const Footer = () => (
       <Grid md={3}>
         <div>
           <Heading>
-            <h6>CONNECT PROJECT</h6>
+            <h6>BUCHAS OK</h6>
           </Heading>
           <p>
-            Qui eu ex proident occaecat exercitation commodo sunt et deserunt.
-            Velit sit aute minim minim ea aliquip velit commodo amet pariatur
-            sint.
+            Somos especialistas na fabricação de peças para suspensão de
+            veículos de pequeno, médio e grande porte. Com mais de 70 anos de
+            experiência, a confiabilidade é o valor que mais prezamos.
           </p>
         </div>
         <div>
@@ -55,7 +56,14 @@ const Footer = () => (
               <IconContainer>
                 <FaPhone />
               </IconContainer>
-              (19) 99223-5332
+              (19) 3241-4484
+            </p>
+
+            <p>
+              <IconContainer>
+                <FaEnvelope />
+              </IconContainer>
+              contato@buchasok.com.br
             </p>
 
             <p>
@@ -72,7 +80,10 @@ const Footer = () => (
           <Heading>
             <h6>Redes sociais</h6>
             <p>
-              <FooterLink target="_blank" href="">
+              <FooterLink
+                target="_blank"
+                href="https://www.facebook.com/buchasok/"
+              >
                 <IconContainer>
                   <FaFacebook />
                 </IconContainer>
@@ -80,7 +91,10 @@ const Footer = () => (
               </FooterLink>
             </p>
             <p>
-              <FooterLink target="_blank" href="">
+              <FooterLink
+                target="_blank"
+                href="https://www.instagram.com/buchasok/"
+              >
                 <IconContainer>
                   <FaInstagram />
                 </IconContainer>

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import Container from "components/atoms/Container";
+import { BreakAt, BreakpointSize } from "styles/Breakpoints";
 
 const Content = styled.div`
   padding: 40px 0;
@@ -15,6 +16,9 @@ const Content = styled.div`
   h2 {
     margin-top: 0;
   }
+  /* ${BreakAt(BreakpointSize.md)} {
+    padding: 80px 0;
+  } */
 `;
 
 const Section = ({ inverse, children }) => (
