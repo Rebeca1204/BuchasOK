@@ -19,7 +19,7 @@ const Produtos = () => (
         <h1>DURABILIDADE, RESISTÊNCIA E DESEMPENHO</h1>
       </Heading>
       <ul>
-        <p>Escolha quem não brinca na hora de produzir peças para veículos. </p>
+        <p>Escolha quem não brinca na hora de produzir peças para veículos.</p>
       </ul>
       <Button variant="default" color="primary">
         Conheça nossa linha completa de produtos
