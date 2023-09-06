@@ -11,46 +11,54 @@ import Accordion, { AccordionGroup } from "components/atoms/accordion";
 import { FaEnvelopeOpen, FaAddressBook } from "react-icons/fa";
 import AboutVideo from "assets/AboutVideo.mp4";
 import ProductGrid from "components/organisms/ProductGrid";
+import { Link } from "react-router-dom";
 
 const products = [
   {
     id: 0,
-    title: "Produto 1",
+    title: "Bucha da barra estabilizadora",
     summary:
       "Voluptate voluptate excepteur nisi aliqua cillum laboris sit fugiat voluptate exercitation excepteur.",
     image: "https://s3.amazonaws.com/lepok.w/produtos/produtos/02628_2.jpg",
   },
   {
     id: 1,
-    title: "Produto 2",
+    title: "Bucha da mola dianteira internacional Durastar",
     summary:
       "Ad consectetur dolore sunt ipsum deserunt exercitation elit ut sunt.",
     image: undefined,
   },
   {
     id: 2,
-    title: "Produto 3",
+    title: "Bucha da mola traseira Master",
     summary:
       "Velit nostrud officia et dolore excepteur veniam sunt cupidatat ut pariatur exercitation id.",
     image: undefined,
   },
   {
     id: 3,
-    title: "Produto 4",
+    title: "Bucha da mola dianteira VW",
     summary:
       "Pariatur irure consectetur officia laboris nostrud elit pariatur occaecat id qui.",
     image: undefined,
   },
   {
     id: 4,
-    title: "Produto 5",
+    title: "Bucha traseira Fiorino",
     summary:
       "Quis fugiat do culpa non tempor ea magna ut adipisicing anim excepteur pariatur.",
     image: undefined,
   },
   {
     id: 5,
-    title: "Produto 6",
+    title: "Bucha dianteira do MB Atego",
+    summary:
+      "Nisi labore laborum esse officia ex enim exercitation ipsum eiusmod Lorem et eu ipsum.",
+    image: undefined,
+  },
+  {
+    id: 6,
+    title: "Bucha traseira do MB Atego",
     summary:
       "Nisi labore laborum esse officia ex enim exercitation ipsum eiusmod Lorem et eu ipsum.",
     image: undefined,
@@ -68,7 +76,9 @@ const Home = () => (
       <ul>
         <li>A tradição e qualidade que atravessa gerações.</li>
       </ul>
-      <Button color="primary">Conheça nossa linha completa de produtos</Button>
+      <Button color="primary" as={Link} to="/produtos">
+        Conheça nossa linha completa de produtos
+      </Button>
     </Hero>
     <Section>
       <Grid sm={3}>
