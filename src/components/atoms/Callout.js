@@ -70,6 +70,7 @@ CalloutMedia.propTypes = {
 
 const StyledCallout = styled.div`
   display: flex;
+  background-color: #fff;
   border: 1px solid ${(props) => props.theme.colors.border};
   border-left: 4px solid ${(props) => props.theme.colors.primary.main};
   border-radius: 4px;
