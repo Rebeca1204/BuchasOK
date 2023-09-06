@@ -5,13 +5,13 @@ import Button from "components/atoms/Button";
 import Section from "components/molecules/Section";
 import ImageOrcamento from "draws/ImageOrcamento.svg";
 import ImageTabela from "assets/ImageTabela.png";
-import Grid from "components/atoms/Grid";
 import styled from "styled-components";
 import Callout, {
   CalloutActions,
   CalloutBody,
   CalloutMedia,
 } from "components/atoms/Callout";
+import ListContainer from "components/atoms/ListContainer";
 
 const Image = styled.img`
   width: 100%;
@@ -37,12 +37,20 @@ const Produtos = () => (
           <Heading>
             <h2>Produtos</h2>
           </Heading>
-          Nulla laborum ex non est. Ea eu ipsum sit magna dolor nisi. Irure
-          Lorem nisi laboris minim ex irure aliqua. Officia ipsum adipisicing
-          veniam tempor proident ipsum Lorem id. Pariatur ut cupidatat laboris
-          consequat exercitation minim id Lorem reprehenderit pariatur duis
-          dolore cillum mollit. Duis deserunt ex ad qui. Dolor ipsum
-          reprehenderit sint nisi in laboris.
+          <ListContainer>
+            <p>
+              <strong>Linha 0KMW</strong>
+            </p>
+            <ul>
+              <li>Alta resistência ao desgaste.</li>
+              <li>Não trinca nunca.</li>
+              <li>Absorve o ruído</li>
+              <li>Resiste ao ataque de produtos químicos</li>
+            </ul>
+            <Button variant="outlined" color="danger">
+              Catálogo de produtos
+            </Button>
+          </ListContainer>
         </div>
         <img
           src={ImageTabela}
@@ -56,10 +64,13 @@ const Produtos = () => (
         <CalloutBody>
           <h6>Solicite seu orçamento agora mesmo.</h6>
           <p>
-            Ad esse fugiat aliquip consectetur labore pariatur sint
-            reprehenderit commodo consectetur. Nisi culpa magna occaecat ullamco
-            occaecat. Aute magna elit cillum laborum enim esse. Anim ad eiusmod
-            fugiat anim culpa esse enim tempor nostrud fugiat.
+            Nulla aliqua magna sint qui mollit.In ipsum tempor exercitation
+            velit ipsum adipisicing aliqua anim qui.Enim cupidatat in quis
+            proident dolor laboris voluptate commodo minim esse.
+          </p>
+          <p>
+            Em instantes você preenche o formulário, e antes do que espera,
+            recebe seu orçamento! Experimente!
           </p>
 
           <CalloutActions>

@@ -9,8 +9,8 @@ const theme = {
       text: "#212121",
     },
     danger: {
-      main: "#6e4f4b",
-      dark: "#b22a00",
+      main: "#0C1C44",
+      dark: "#2453c9",
       text: "#dfe0d8",
     },
     border: "rgba(0, 0, 0, 0.125)",
