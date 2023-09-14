@@ -6,7 +6,7 @@ import Container from "components/atoms/Container";
 const Root = styled.div`
   padding: 100px 0;
   ${(props) => css`
-    background: url(${props.image}), rgba(0, 0, 0, 0.4);
+    background: url(${props.image}), rgba(0, 0, 60, 0.6);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;

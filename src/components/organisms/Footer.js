@@ -8,7 +8,6 @@ import {
   FaBuilding,
   FaFacebook,
   FaInstagram,
-  FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
 const Root = styled.footer`
@@ -78,7 +77,10 @@ const Footer = () => (
           <Heading>
             <h6>Redes sociais</h6>
             <p>
-              <FooterLink target="_blank" href="">
+              <FooterLink
+                target="_blank"
+                href="https://www.facebook.com/buchasok/"
+              >
                 <IconContainer>
                   <FaFacebook />
                 </IconContainer>
@@ -88,23 +90,12 @@ const Footer = () => (
             <p>
               <FooterLink
                 target="_blank"
-                href="https://www.facebook.com/buchasok/"
+                href="https://www.instagram.com/buchasok/"
               >
                 <IconContainer>
                   <FaInstagram />
                 </IconContainer>
                 Instagram
-              </FooterLink>
-            </p>
-            <p>
-              <FooterLink
-                target="_blank"
-                href="https://www.instagram.com/buchasok/"
-              >
-                <IconContainer>
-                  <FaLinkedin />
-                </IconContainer>
-                Linkedin
               </FooterLink>
             </p>
           </Heading>

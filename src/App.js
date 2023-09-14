@@ -6,6 +6,8 @@ import Contact from "./components/pages/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Produtos from "components/pages/Produtos";
 import MeLiga from "components/pages/MeLiga";
+import Orcamento from "components/pages/Orcamento";
+import Navbar from "components/atoms/Navbar";
 
 function App() {
   return (
@@ -13,10 +15,51 @@ function App() {
       <GlobalStyleComposed />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/produtos" element={<Produtos />} />
-          <Route path="/contato" element={<Contact />} />
-          <Route path="/meLigue" element={<MeLiga />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Home />
+              </>
+            }
+          />
+          <Route
+            path="/produtos"
+            element={
+              <>
+                <Navbar />
+                <Produtos />
+              </>
+            }
+          />
+          <Route
+            path="/contato"
+            element={
+              <>
+                <Navbar />
+                <Contact />
+              </>
+            }
+          />
+          <Route
+            path="/meLigue"
+            element={
+              <>
+                <Navbar />
+                <MeLiga />
+              </>
+            }
+          />
+          <Route
+            path="/orcamento"
+            element={
+              <>
+                <Navbar />
+                <Orcamento />
+              </>
+            }
+          />
         </Routes>
       </Router>
     </ThemeProvider>

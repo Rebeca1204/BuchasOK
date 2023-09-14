@@ -6,12 +6,14 @@ import Section from "components/molecules/Section";
 import ImageOrcamento from "draws/ImageOrcamento.svg";
 import ImageTabela from "assets/ImageTabela.png";
 import styled from "styled-components";
+import CatalogoBuchasOK from "assets/catalogo_de_produtos_buchasok.pdf";
 import Callout, {
   CalloutActions,
   CalloutBody,
   CalloutMedia,
 } from "components/atoms/Callout";
 import ListContainer from "components/atoms/ListContainer";
+import { Link } from "react-router-dom";
 
 const Image = styled.img`
   width: 100%;
@@ -38,9 +40,11 @@ const Produtos = () => {
             Escolha quem não brinca na hora de produzir peças para veículos.
           </li>
         </ul>
-        <Button color="primary">
-          Conheça nossa linha completa de produtos
-        </Button>
+        {/* <Link to={CatalogoBuchasOK} target="_blank">
+          <Button color="primary">
+            Conheça nossa linha completa de produtos
+          </Button>
+        </Link> */}
       </Hero>
       <Section>
         <div style={{ display: "flex" }}>
@@ -58,9 +62,11 @@ const Produtos = () => {
                 <li>Absorve o ruído</li>
                 <li>Resiste ao ataque de produtos químicos</li>
               </ul>
-              <Button variant="outlined" color="danger">
-                Catálogo de produtos
-              </Button>
+              <Link to={CatalogoBuchasOK} target="_blank">
+                <Button variant="outlined" color="danger">
+                  Catálogo de produtos
+                </Button>
+              </Link>
             </ListContainer>
           </div>
           <img
@@ -85,7 +91,9 @@ const Produtos = () => {
             </p>
 
             <CalloutActions>
-              <Button color="primary">SOLICITAR</Button>
+              <Link to="/orcamento">
+                <Button color="primary">SOLICITAR</Button>
+              </Link>
             </CalloutActions>
           </CalloutBody>
           <CalloutMedia>

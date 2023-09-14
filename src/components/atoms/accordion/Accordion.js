@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
 const Root = styled.div`
   border: 1px solid #e0e0e0;
-  border-left: 5px solid ${(props) => props.theme.colors.primary.dark};
+  border-left: 5px solid ${(props) => props.theme.colors.danger.main};
   background-color: #fff;
   ${(props) =>
     props.open &&

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 // import PropTypes from "prop-types";
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import { Formik } from "formik";
+import { message } from "antd";
+import emailjs from "@emailjs/browser";
 import Button from "components/atoms/Button";
 import { Input } from "formik-antd";
 import ImageForm from "draws/ImageForm.svg";
@@ -18,10 +20,21 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import ImageContato from "assets/ImageContato.jpg";
 
 const { TextArea } = Input;
 
 const Home = () => {
+  const form = useRef();
+
+  const [messageApi, contextHolder] = message.useMessage();
+  const success = () => {
+    messageApi.open({
+      type: "success",
+      content: "Mensagem enviada com sucesso",
+    });
+  };
+
   const Image = styled.img`
     width: 100%;
     max-height: 400px;
@@ -35,7 +48,7 @@ const Home = () => {
   `;
   return (
     <>
-      <Hero image="https://images.pexels.com/photos/6720550/pexels-photo-6720550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+      <Hero image={ImageContato}>
         <Heading>
           <h1>Fale conosco</h1>
         </Heading>
@@ -54,18 +67,32 @@ const Home = () => {
               <Image src={ImageForm} alt="Imagem form" />
             </CalloutMedia>
             <CalloutBody>
+              {contextHolder}
               <Formik
-                initialValues={{ firstName: "", lastName: "", email: "" }}
+                initialValues={{}}
                 //   validationSchema={}
-                onSubmit={(values, { setSubmitting }) => {
-                  setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                    setSubmitting(false);
-                  }, 400);
+                onSubmit={(values, { resetForm }) => {
+                  emailjs
+                    .sendForm(
+                      "service_gmail",
+                      "contact_form",
+                      form.current,
+                      "iRjlpA0zW8mvYrr9V"
+                    )
+                    .then(
+                      (result) => {
+                        success();
+                        console.log(result.text);
+                      },
+                      (error) => {
+                        console.log(error.text);
+                      }
+                    );
+                  resetForm();
                 }}
               >
                 {(formik) => (
-                  <form onSubmit={formik.handleSubmit}>
+                  <form ref={form} onSubmit={formik.handleSubmit}>
                     <Grid md={2}>
                       <span>
                         <label htmlFor="name">Nome</label>
@@ -133,7 +160,7 @@ const Home = () => {
                     {formik.touched.msg && formik.errors.msg ? (
                       <div>{formik.errors.msg}</div>
                     ) : null}
-                    <Button color="danger" type="submit">
+                    <Button htmlType="submit" color="danger" type="submit">
                       Enviar
                     </Button>
                   </form>

@@ -7,9 +7,8 @@ const getColor = (props) => props.theme.colors.danger.main;
 const Root = styled.div`
   text-align: center;
   color: ${getColor};
-  & strong{
-  color: ${getColor};
-
+  & strong {
+    color: ${getColor};
   }
   & h5 {
     margin: 16px 0;

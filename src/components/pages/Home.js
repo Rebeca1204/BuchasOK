@@ -2,7 +2,6 @@ import React from "react";
 // import PropTypes from "prop-types";
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
-import Button from "components/atoms/Button";
 import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
@@ -10,37 +9,42 @@ import Footer from "components/organisms/Footer";
 import Accordion, { AccordionGroup } from "components/atoms/accordion";
 import { FaEnvelopeOpen, FaAddressBook } from "react-icons/fa";
 import AboutVideo from "assets/AboutVideo.mp4";
+import BuchaMolaTraseira from "assets/BuchaMolaTraseira.jpg";
+import BuchaMolaDianteira from "assets/BuchaMolaDianteira.jpg";
+import BuchaMolaTraseiraJeep from "assets/BuchaMolaTraseiraJeep.jpg";
+import BuchaTorcao from "assets/BuchaTorcao.jpg";
+import Image from "assets/ImageHome.jpg";
+
 import ProductGrid from "components/organisms/ProductGrid";
-import { Link } from "react-router-dom";
 
 const products = [
   {
     id: 0,
-    title: "Bucha da barra estabilizadora",
+    title: "Bucha da mola traseira e dianteira Jeep Willys",
     summary:
       "Voluptate voluptate excepteur nisi aliqua cillum laboris sit fugiat voluptate exercitation excepteur.",
-    image: "https://s3.amazonaws.com/lepok.w/produtos/produtos/02628_2.jpg",
+    image: BuchaMolaTraseiraJeep,
   },
   {
     id: 1,
-    title: "Bucha da mola dianteira internacional Durastar",
+    title: "Bucha da mola dianteira e traseira Hilux",
     summary:
       "Ad consectetur dolore sunt ipsum deserunt exercitation elit ut sunt.",
-    image: undefined,
+    image: BuchaMolaDianteira,
   },
   {
     id: 2,
-    title: "Bucha da mola traseira Master",
+    title: "Bucha da mola traseira e jumelo traseiro Ranger",
     summary:
       "Velit nostrud officia et dolore excepteur veniam sunt cupidatat ut pariatur exercitation id.",
-    image: undefined,
+    image: BuchaMolaTraseira,
   },
   {
     id: 3,
-    title: "Bucha da mola dianteira VW",
+    title: "Bucha da barra de torção Iveco Daily",
     summary:
       "Pariatur irure consectetur officia laboris nostrud elit pariatur occaecat id qui.",
-    image: undefined,
+    image: BuchaTorcao,
   },
   {
     id: 4,
@@ -56,29 +60,22 @@ const products = [
       "Nisi labore laborum esse officia ex enim exercitation ipsum eiusmod Lorem et eu ipsum.",
     image: undefined,
   },
-  {
-    id: 6,
-    title: "Bucha traseira do MB Atego",
-    summary:
-      "Nisi labore laborum esse officia ex enim exercitation ipsum eiusmod Lorem et eu ipsum.",
-    image: undefined,
-  },
 ];
 
 const Home = () => (
   <>
-    <Hero image="https://images.pexels.com/photos/6720550/pexels-photo-6720550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <Hero image={Image}>
       <Heading>
         <h1>
-          Connect Project <strong>(destaque)</strong>
+          BUCHAS OK <strong>(desde 1955)</strong>
         </h1>
       </Heading>
       <ul>
         <li>A tradição e qualidade que atravessa gerações.</li>
       </ul>
-      <Button color="primary" as={Link} to="/produtos">
+      {/* <Button color="primary" as={Link} to="/produtos">
         Conheça nossa linha completa de produtos
-      </Button>
+      </Button> */}
     </Hero>
     <Section>
       <Grid sm={3}>
@@ -148,17 +145,10 @@ const Home = () => (
         <h2>Dúvidas recorrentes</h2>
       </Heading>
       <AccordionGroup>
-        <Accordion title="Como eu djfisdjf udfhuaif aufhuadh">
-          Ea aliqua ad nisi exercitation aliqua in tempor proident mollit duis.
-          Ea fugiat voluptate ex qui et. Ut voluptate aute adipisicing occaecat
-          pariatur.Commodo id minim aliquip eu amet proident laboris laboris
-          sint ut id. Velit ea dolor consequat velit nulla. Aliquip elit veniam
-          nostrud aliqua est mollit officia Lorem aliqua eu laborum. Consequat
-          proident occaecat incididunt excepteur velit sint in anim. Adipisicing
-          qui id commodo non duis elit ullamco cupidatat cupidatat commodo.
-          Tempor eiusmod non cillum irure minim.
+        <Accordion title="Horário de funcionamento" open>
+          Segunda a sexta - XX:XX-YY:YY
         </Accordion>
-        <Accordion title="Como eu tempor aliquip sit consequat minim.">
+        {/* <Accordion title="Como eu tempor aliquip sit consequat minim.">
           Ea aliqua ad nisi exercitation aliqua in tempor proident mollit duis.
           Ea fugiat voluptate ex qui et. Ut voluptate aute adipisicing occaecat
           pariatur.Commodo id minim aliquip eu amet proident laboris laboris
@@ -177,7 +167,7 @@ const Home = () => (
           proident occaecat incididunt excepteur velit sint in anim. Adipisicing
           qui id commodo non duis elit ullamco cupidatat cupidatat commodo.
           Tempor eiusmod non cillum irure minim.
-        </Accordion>
+        </Accordion> */}
       </AccordionGroup>
     </Section>
 

@@ -5,6 +5,8 @@ import Card, { CardBody, CardMedia } from "components/atoms/Card";
 import Heading from "components/atoms/Heading";
 import Button from "components/atoms/Button";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import CatalogoBuchasOK from "assets/catalogo_de_produtos_buchasok.pdf";
 
 const ToolBar = styled.div`
   margin-top: 40px;
@@ -25,9 +27,11 @@ const ProductGrid = ({ products }) => {
               </Heading>
               <p>{product.summary}</p>
               <div>
-                <Button variant="link" color="primary">
-                  Saiba mais
-                </Button>
+                <Link to={CatalogoBuchasOK} target="_blank">
+                  <Button variant="link" color="danger">
+                    Saiba mais
+                  </Button>
+                </Link>
               </div>
             </CardBody>
           </Card>
@@ -55,7 +59,7 @@ ProductGrid.propTypes = {
       image: PropTypes.string,
       title: PropTypes.string,
       summary: PropTypes.string,
-    }),
+    })
   ),
 };
 
