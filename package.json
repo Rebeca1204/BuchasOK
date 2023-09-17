@@ -1,62 +1,38 @@
 {
-  "name": "front-project",
-  "version": "1.0.0",
+  "name": "projeto1",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-docs": "^7.4.0",
-    "@storybook/addon-essentials": "^7.3.2",
-    "@storybook/addon-interactions": "^7.3.2",
-    "@storybook/addon-knobs": "^7.0.2",
-    "@storybook/addon-links": "^7.3.2",
-    "@storybook/addon-onboarding": "^1.0.8",
-    "@storybook/addon-viewport": "^7.4.0",
-    "@storybook/blocks": "^7.3.2",
-    "@storybook/preset-create-react-app": "^7.3.2",
-    "@storybook/react": "^7.3.2",
-    "@storybook/react-webpack5": "^7.3.2",
-    "@storybook/testing-library": "^0.2.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "babel-plugin-named-exports-order": "^0.0.2",
-    "chromatic": "^6.24.1",
-    "eslint-plugin-storybook": "^0.6.13",
-    "jest-styled-components": "^7.1.1",
-    "prettier": "^3.0.2",
-    "prop-types": "^15.8.1",
+    "@ant-design/icons": "^5.2.6",
+    "@emailjs/browser": "^3.11.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "antd": "^5.9.0",
+    "flowbite-react": "^0.6.0",
+    "formik": "^2.4.4",
+    "formik-antd": "^2.0.4",
+    "history": "^5.3.0",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.10.1",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
-    "storybook": "^7.3.2",
     "styled-components": "^6.0.7",
-    "web-vitals": "^2.1.4",
-    "webpack": "^5.88.2"
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "cover": "yarn test -- --coverage --watchAll=false",
-    "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "chromatic --project-token=chpt_395110cbf6f2e3c"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/**/*.stories.js",
-      "!src/reportWebVitals.js",
-      "!src/index.js"
-    ]
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -70,21 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "React project",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rebeca1204/teste.git"
-  },
-  "author": {
-    "name": "Rebeca"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Rebeca1204/teste/issues"
-  },
-  "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/Rebeca1204/teste#readme",
-  "_id": "front-project@1.0.0"
+  }
 }

@@ -46,6 +46,7 @@ CardMedia.propTypes = {
 const Root = styled.div`
   background-color: ${(props) => props.theme.colors.danger.text};
   border-radius: 4px;
+  border: 1px solid ${(props) => props.theme.colors.border};
   overflow: hidden;
 `;
 

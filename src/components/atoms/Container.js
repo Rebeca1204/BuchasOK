@@ -9,8 +9,7 @@ const Container = styled.div`
     margin: 0 16px;
   }
   ${BreakAt(BreakpointSize.xl)} {
-    padding: 0;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
   }
 `;

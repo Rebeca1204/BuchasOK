@@ -3,13 +3,17 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { BreakAt, BreakpointSize } from "styles/Breakpoints";
 
-const getColor = (props) => props.theme.colors.primary.main;
+const getColor = (props) => props.theme.colors.danger.main;
 const Root = styled.div`
   text-align: center;
+  color: ${getColor};
+  & strong {
+    color: ${getColor};
+  }
   & h5 {
     margin: 16px 0;
-    //mudar
     min-height: 3.12rem;
+    color: ${getColor};
 
     ${BreakAt(BreakpointSize.lg)} {
       min-height: 3.9rem;
@@ -29,7 +33,7 @@ const IconRoot = styled.div`
   &:hover {
     border: 1px solid ${getColor};
     > * {
-      color: ${(props) => props.theme.colors.danger.text};
+      color: white;
       background-color: ${(props) => props.theme.colors.primary.dark};
     }
   }
@@ -44,7 +48,6 @@ const IconContainer = styled.div`
   font-size: 32px;
   width: 100%;
   height: 100%;
-  color: ${getColor};
 `;
 
 const Feature = ({ icon, title, children }) => (

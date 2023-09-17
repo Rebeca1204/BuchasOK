@@ -1,10 +1,16 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Container from "components/atoms/Container";
+
 const Root = styled.div`
   padding: 100px 0;
-  background-color: ${(props) => props.theme.colors.primary.dark};
+  ${(props) => css`
+    background: url(${props.image}), rgba(0, 0, 60, 0.6);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  `}
 `;
 
 const Content = styled.div`
@@ -27,8 +33,8 @@ const Content = styled.div`
   }
 `;
 
-const Hero = ({ children }) => (
-  <Root>
+const Hero = ({ image, children }) => (
+  <Root image={image} data-testid="hero">
     {/* style={{background: url(), rgba(0,0,0,0.4); background-size: cover; background-position: center; background-blend-mode: overlay; }} */}
     <Container>
       <Content>{children}</Content>
@@ -37,6 +43,7 @@ const Hero = ({ children }) => (
 );
 
 Hero.propTypes = {
+  image: PropTypes.string,
   children: PropTypes.node, // ou .element para receber um componente
 };
 
