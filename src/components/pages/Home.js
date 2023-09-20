@@ -135,7 +135,7 @@ const Home = () => (
             autoPlay
             loop
             muted
-            controls={false}
+            controls={null}
           />
         </div>
       </Grid>
