@@ -17,7 +17,7 @@ import Image from "assets/ImageHome.jpg";
 import styled from "styled-components";
 
 import ProductGrid from "components/organisms/ProductGrid";
-import { BreakAt, BreakpointSize } from "styles/Breakpoints";
+// import { BreakAt, BreakpointSize } from "styles/Breakpoints";
 
 const Video = styled.video``;
 
