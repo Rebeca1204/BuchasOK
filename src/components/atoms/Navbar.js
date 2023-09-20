@@ -20,6 +20,15 @@ const Navbar = () => {
       margin-top: 15px;
     }
   `;
+
+  const DivMobile = styled.div`
+    ${BreakAt(BreakpointSize.sm)} {
+      font-size: 5px;
+      font-weight: 300;
+      color: red;
+    }
+  `;
+
   return (
     <Menu mode="horizontal" style={{ display: "block" }}>
       <Menu.Item>
@@ -42,7 +51,7 @@ const Navbar = () => {
         </Menu.Item>
         <Menu.Item key="/catalogo">
           <Link to={CatalogoBuchasOK} target="_blank">
-            Baixar o catálogo de produtos
+            Ver catálogo
           </Link>
         </Menu.Item>
       </Menu.SubMenu>
@@ -52,17 +61,22 @@ const Navbar = () => {
         title="FALE CONOSCO"
         style={{ marginBottom: "15px" }}
       >
-        <Menu.Item>
-          <Link to="/contato">Envie nos sua mensagem</Link>
-        </Menu.Item>
+        <DivMobile>
+          <Menu.Item>
+            <DivMobile>
+              <Link to="/contato">Envie uma mensagem</Link>
+            </DivMobile>
+          </Menu.Item>
+        </DivMobile>
+
         <Menu.Item key="/meLigue">
-          <Link to="/meLigue">Deixa que ligamos pra você</Link>
+          <Link to="/meLigue">Ligamos pra você</Link>
         </Menu.Item>
       </Menu.SubMenu>
       <Menu.Item key="/orcamento" style={{ float: "right" }}>
         <OrcaDiv>
-          <Button color="danger">
-            <Link to="/orcamento">ORCAMENTO</Link>
+          <Button color="danger" style={{ padding: "10px", margin: "0px" }}>
+            <Link to="/orcamento">ORÇAMENTO</Link>
           </Button>
         </OrcaDiv>
       </Menu.Item>
