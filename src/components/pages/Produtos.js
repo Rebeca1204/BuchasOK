@@ -81,23 +81,24 @@ const Produtos = () => {
           <CalloutBody>
             <h6>Solicite seu orçamento agora mesmo.</h6>
             <p>
-              Nulla aliqua magna sint qui mollit.In ipsum tempor exercitation
-              velit ipsum adipisicing aliqua anim qui.Enim cupidatat in quis
-              proident dolor laboris voluptate commodo minim esse.
-            </p>
-            <p>
               Em instantes você preenche o formulário, e antes do que espera,
               recebe seu orçamento! Experimente!
             </p>
 
             <CalloutActions>
               <Link to="/orcamento">
-                <Button color="primary">SOLICITAR</Button>
+                <Button color="primary" style={{ marginTop: "50px" }}>
+                  SOLICITAR
+                </Button>
               </Link>
             </CalloutActions>
           </CalloutBody>
           <CalloutMedia>
-            <Image src={ImageOrcamento} alt="Fazer orçamento" />
+            <Image
+              style={{ border: "0" }}
+              src={ImageOrcamento}
+              alt="Fazer orçamento"
+            />
           </CalloutMedia>
         </Callout>
       </Section>
