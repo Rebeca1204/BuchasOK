@@ -14,10 +14,12 @@ import Callout, {
 } from "components/atoms/Callout";
 import ListContainer from "components/atoms/ListContainer";
 import { Link } from "react-router-dom";
+import Grid from "components/atoms/Grid";
+import Footer from "components/organisms/Footer";
 
 const Image = styled.img`
-  width: 100%;
-  max-height: 200px;
+  width: 90%;
+  border: gray 1px solid;
 `;
 
 const Produtos = () => {
@@ -48,32 +50,30 @@ const Produtos = () => {
       </Hero>
       <Section>
         <div style={{ display: "flex" }}>
-          <div style={{ width: "50%" }}>
-            <Heading>
-              <h2>Produtos</h2>
-            </Heading>
-            <ListContainer>
-              <p>
-                <strong>Linha 0KMW</strong>
-              </p>
-              <ul>
-                <li>Alta resistência ao desgaste.</li>
-                <li>Não trinca nunca.</li>
-                <li>Absorve o ruído</li>
-                <li>Resiste ao ataque de produtos químicos</li>
-              </ul>
-              <Link to={CatalogoBuchasOK} target="_blank">
-                <Button variant="outlined" color="danger">
-                  Catálogo de produtos
-                </Button>
-              </Link>
-            </ListContainer>
-          </div>
-          <img
-            src={ImageTabela}
-            alt="Tabela comparativa"
-            style={{ width: "40%" }}
-          />
+          <Grid md={2}>
+            <div>
+              <Heading>
+                <h2>Produtos</h2>
+              </Heading>
+              <ListContainer>
+                <p>
+                  <strong>Linha 0KMW</strong>
+                </p>
+                <ul>
+                  <li>Alta resistência ao desgaste.</li>
+                  <li>Não trinca nunca.</li>
+                  <li>Absorve o ruído</li>
+                  <li>Resiste ao ataque de produtos químicos</li>
+                </ul>
+                <Link to={CatalogoBuchasOK} target="_blank">
+                  <Button variant="outlined" color="danger">
+                    Catálogo de produtos
+                  </Button>
+                </Link>
+              </ListContainer>
+            </div>
+            <Image src={ImageTabela} alt="Tabela comparativa"></Image>
+          </Grid>
         </div>
       </Section>
       <Section inverse>
@@ -101,6 +101,7 @@ const Produtos = () => {
           </CalloutMedia>
         </Callout>
       </Section>
+      <Footer />
     </>
   );
 };
