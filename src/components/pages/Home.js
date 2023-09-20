@@ -14,8 +14,12 @@ import BuchaMolaDianteira from "assets/BuchaMolaDianteira.jpg";
 import BuchaMolaTraseiraJeep from "assets/BuchaMolaTraseiraJeep.jpg";
 import BuchaTorcao from "assets/BuchaTorcao.jpg";
 import Image from "assets/ImageHome.jpg";
+import styled from "styled-components";
 
 import ProductGrid from "components/organisms/ProductGrid";
+// import { BreakAt, BreakpointSize } from "styles/Breakpoints";
+
+const Video = styled.video``;
 
 const products = [
   {
@@ -127,17 +131,15 @@ const Home = () => (
           </p>
           {/* <Button color="primary">Saiba mais</Button> */}
         </div>
-        <div>
-          <video
-            style={{ borderRadius: "10px" }}
-            src={AboutVideo}
-            width="100%"
-            autoPlay
-            loop
-            muted
-            controls={null}
-          />
-        </div>
+        <Video
+          style={{ borderRadius: "10px" }}
+          src={AboutVideo}
+          width="100%"
+          autoPlay
+          loop
+          controls={false}
+          muted
+        />
       </Grid>
     </Section>
 
