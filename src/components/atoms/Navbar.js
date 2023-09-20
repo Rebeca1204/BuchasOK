@@ -21,14 +21,6 @@ const Navbar = () => {
     }
   `;
 
-  const DivMobile = styled.div`
-    ${BreakAt(BreakpointSize.sm)} {
-      font-size: 5px;
-      font-weight: 300;
-      color: red;
-    }
-  `;
-
   return (
     <Menu mode="horizontal" style={{ display: "block" }}>
       <Menu.Item>
@@ -61,13 +53,9 @@ const Navbar = () => {
         title="FALE CONOSCO"
         style={{ marginBottom: "15px" }}
       >
-        <DivMobile>
-          <Menu.Item>
-            <DivMobile>
-              <Link to="/contato">Envie uma mensagem</Link>
-            </DivMobile>
-          </Menu.Item>
-        </DivMobile>
+        <Menu.Item>
+          <Link to="/contato">Envie uma mensagem</Link>
+        </Menu.Item>
 
         <Menu.Item key="/meLigue">
           <Link to="/meLigue">Ligamos pra você</Link>
