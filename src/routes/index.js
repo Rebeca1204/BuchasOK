@@ -6,6 +6,7 @@ import Orcamento from "components/pages/Orcamento";
 import Navbar from "components/atoms/Navbar";
 import Home from "components/pages/Home";
 import Contact from "components/pages/Contact";
+import Erro from "components/pages/Erro";
 
 const AppRoutes = () => (
   <Routes>
@@ -51,6 +52,15 @@ const AppRoutes = () => (
         <>
           <Navbar />
           <Orcamento />
+        </>
+      }
+    />
+    <Route
+      path="*"
+      element={
+        <>
+          <Navbar />
+          <Erro />
         </>
       }
     />
