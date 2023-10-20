@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import Button from "components/atoms/Button";
@@ -16,6 +16,7 @@ import ListContainer from "components/atoms/ListContainer";
 import { Link } from "react-router-dom";
 import Grid from "components/atoms/Grid";
 import Footer from "components/organisms/Footer";
+import { useScroll } from "hooks/scroll";
 
 const Image = styled.img`
   width: 90%;
@@ -23,13 +24,7 @@ const Image = styled.img`
 `;
 
 const Produtos = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  useScroll();
 
   return (
     <>

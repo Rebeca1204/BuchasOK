@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
@@ -14,6 +14,7 @@ import styled from "styled-components";
 import Grid from "components/atoms/Grid";
 import { MailOutlined, PhoneOutlined, UserOutlined } from "@ant-design/icons";
 import ImageOrcamento from "assets/ImageOrcamento.jpg";
+import { useScroll } from "hooks/scroll";
 
 const { TextArea } = Input;
 
@@ -32,7 +33,7 @@ const Orcamento = () => {
     width: 100%;
     max-height: 400px;
   `;
-  
+
   const Root = styled.div`
     line-height: 1.6rem;
 
@@ -41,14 +42,8 @@ const Orcamento = () => {
     }
   `;
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
-  
+  useScroll();
+
   return (
     <>
       <Hero image={ImageOrcamento}>
