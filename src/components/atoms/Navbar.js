@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <Menu mode="horizontal" style={{ display: "block" }}>
-      <Menu.Item>
+      <Menu.Item key="logo">
         <Link to="/">
           <Image src="/ImageLogo.png"></Image>
         </Link>
@@ -34,11 +34,11 @@ const Navbar = () => {
       </Menu.Item>
 
       <Menu.SubMenu
-        key="/produtos"
+        key="produtos"
         title="PRODUTOS"
         style={{ marginBottom: "15px" }}
       >
-        <Menu.Item>
+        <Menu.Item key="/produtos">
           <Link to="/produtos">Mais detalhes</Link>
         </Menu.Item>
         <Menu.Item key="/catalogo">
@@ -49,11 +49,11 @@ const Navbar = () => {
       </Menu.SubMenu>
 
       <Menu.SubMenu
-        key="/contato"
+        key="contato"
         title="FALE CONOSCO"
         style={{ marginBottom: "15px" }}
       >
-        <Menu.Item>
+        <Menu.Item key="/contato">
           <Link to="/contato">Envie uma mensagem</Link>
         </Menu.Item>
 
