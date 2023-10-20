@@ -33,6 +33,7 @@ const Orcamento = () => {
     width: 100%;
     max-height: 400px;
   `;
+  
   const Root = styled.div`
     line-height: 1.6rem;
 
@@ -40,6 +41,15 @@ const Orcamento = () => {
       margin-top: 16px;
     }
   `;
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+  
   return (
     <>
       <Hero image={ImageOrcamento}>
