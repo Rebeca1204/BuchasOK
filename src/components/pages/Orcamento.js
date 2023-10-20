@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-// import PropTypes from "prop-types";
+import React, { useRef, useEffect } from "react";
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
